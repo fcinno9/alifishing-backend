@@ -628,6 +628,8 @@ const brandRules = [
 
   { 솔로킹: "솔로킹(SOLOKING)", SOLOKING: "솔로킹(SOLOKING)" },
   { 아크록스: "아크록스(ARCROX)", ARCROX: "아크록스(ARCROX)" },
+  { 아큐라: "아큐라(ACURA)", ACURA: "아큐라(ACURA)" },
+  { 오거스: "오거스(AUGURS)", AUGURS: "오거스(AUGURS)" },
   { 스카우트47: "스카우트47(SCOUT47)", SCOUT47: "스카우트47(SCOUT47)" },
   { 스카우트48: "스카우트48(SCOUT48)", SCOUT48: "스카우트48(SCOUT48)" },
   {
@@ -749,7 +751,33 @@ const brandRules = [
     마이크로바이트: "마이크로바이트(MICROBITE)",
     MICROBITE: "마이크로바이트(MICROBITE)",
   },
+
   { HONOR: "오너(HONOR)" },
+  { KILLER: "킬러(KILLER)" },
+  { KEVIN: "케빈(KEVIN)" },
+  {
+    파로사: "파로사(PAROSSA)",
+    PAROSSA: "파로사(PAROSSA)",
+  },
+  {
+    FANTASY: "판타지(FANTASY)",
+  },
+
+  {
+    "JIG TRAINING": "지그 트레이닝(JIG TRAINING)",
+    "JIG 훈련": "지그 트레이닝(JIG TRAINING)",
+  },
+  {
+    "영감을 받은": "인스파이어드(INSPIRED)",
+  },
+
+  {
+    "미사일 아징": "미사일 아징(MISSILE AJING)",
+    "미사일 AJING": "미사일 아징(MISSILE AJING)",
+    "MISSILE AJING": "미사일 아징(MISSILE AJING)",
+    "MISSILE 아징": "미사일 아징(MISSILE AJING)",
+  },
+  { OUTRANGE: "아웃레인지(OUTRANGE)" },
   { kudo: "쿠도(kudo)" },
 
   //  ---------------------------------------- 킹덤  -----------------------------
@@ -840,6 +868,9 @@ const brandRules = [
   //  ---------------------------------------- 시서  -----------------------------
   {
     시서: "시서(SEASIR)",
+    세이사르: "시서(SEASIR)",
+    시어시어: "시서(SEASIR)",
+    시스아이어: "시서(SEASIR)",
     시사르: "시서(SEASIR)",
     씨사: "시서(SEASIR)",
     씨사르: "시서(SEASIR)",
@@ -858,6 +889,34 @@ const brandRules = [
   {
     살미누스: "살미누스(Salminus)",
     Salminus: "살미누스(Salminus)",
+  },
+  {
+    리피터: "리피터(Repeater)",
+    Repeater: "리피터(Repeater)",
+  },
+  {
+    메가쿠다: "메가쿠다(Megacuda)",
+    Megacuda: "메가쿠다(Megacuda)",
+  },
+  {
+    익스트림: "익스트림(EXTREME)",
+    EXTREME: "익스트림(EXTREME)",
+  },
+  {
+    시리우스: "시리우스(Sirius)",
+    Sirius: "시리우스(Sirius)",
+  },
+  {
+    "DC 알로이": "DC 알로이(DC ALLOY)",
+    "DC ALLOY": "DC 알로이(DC ALLOY)",
+  },
+  {
+    렉스캐스트: "렉스캐스트(Rexcast)",
+    Rexcast: "렉스캐스트(Rexcast)",
+  },
+  {
+    프로스펙: "프로스펙(Prospec)",
+    Prospec: "프로스펙(Prospec)",
   },
   {
     레드불: "레드불(RedBull)",
@@ -935,15 +994,17 @@ export function convertBrandNamesToKorean(title) {
 
       const pattern = new RegExp(
         [
-          // 이미 변환된 표기는 통째로 처리
+          // 이미 완성된 표기
           escapeRegExp(replacement),
 
-          // 영문(한글), 한글(영문) 형태 처리
+          // 영문(한글), 한글(영문) 형태
           `(?:${aliasPattern})\\s*\\(\\s*(?:${aliasPattern})\\s*\\)`,
 
-          // 현재 검색어
+          // 개별 검색어
           escapeRegExp(keyword),
-        ].join("|"),
+        ]
+          .map((part) => `(?<![a-zA-Z])(?:${part})(?![a-zA-Z])`)
+          .join("|"),
         "i",
       );
 
