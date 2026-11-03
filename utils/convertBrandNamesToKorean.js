@@ -132,6 +132,7 @@ const brandRules = [
   {
     퓨어루어: "퓨어루어(PURELURE)",
     퓨어러어: "퓨어루어(PURELURE)",
+    퓨어러뉴: "퓨어루어(PURELURE)",
     PURELURE: "퓨어루어(PURELURE)",
   },
 
@@ -184,6 +185,10 @@ const brandRules = [
   {
     아마로: "아마로(Amaro)",
     Amaro: "아마로(Amaro)",
+  },
+  {
+    "퓨어루어 SPURS 프로 라이트 게임 낚싯대 1.86, 2.15m":
+      "퓨어루어 SPURS 프로 라이트 게임 낚싯대 1.86, 2.15m",
   },
   {
     "신상 댄스": "뉴 플라이트 댄스(NEW FLIGHT DANCE)",
@@ -653,16 +658,35 @@ const brandRules = [
   //  ---------------------------------------- 고투어  -----------------------------
 
   {
-    고투어: "고투어(gorure)",
-    고쳐: "고투어(gorure)",
-    고처: "고투어(gorure)",
-    gorure: "고투어(gorure)",
+    고투어: "고투어(Goture)",
+    고츄어: "고투어(Goture)",
+    고쳐: "고투어(Goture)",
+    고처: "고투어(Goture)",
+    Goture: "고투어(Goture)",
+    Gtoure: "고투어(Gtoure)",
   },
 
   {
     폴럭스: "폴룩스(pollux)",
     폴룩스: "폴룩스(pollux)",
     pollux: "폴룩스(pollux)",
+  },
+
+  {
+    브리즈: "브리즈(BREEZE)",
+    BREEZE: "브리즈(BREEZE)",
+  },
+  {
+    시툴라: "시툴라(SITULA)",
+    SITULA: "시툴라(SITULA)",
+  },
+  {
+    아퀼라: "아퀼라(AQUILA)",
+    AQUILA: "아퀼라(AQUILA)",
+  },
+  {
+    레드폭스: "레드폭스(RED-FOX)",
+    "RED-FOX": "레드폭스(RED-FOX)",
   },
   {
     텐카라: "텐카라(tenkara)",
@@ -707,6 +731,9 @@ const brandRules = [
     시크나이트: "씨나이트(SeaKnight)",
     SeaKnight: "씨나이트(SeaKnight)",
   },
+
+  { FENIX: "피닉스(FENIX)" },
+
   //  ---------------------------------------- 소우가일랑  -----------------------------
 
   {
@@ -753,7 +780,20 @@ const brandRules = [
   },
 
   { HONOR: "오너(HONOR)" },
+  { "QUARTZ CAPR": "퀘츠 카프(QUARTZ CAPR)" },
+  { "SPEEDFLY SPIN": "스피드플라이 스핀(SPEEDFLY SPIN)" },
+  { "CARBON TECH": "카본 테크(CARBON TECH)" },
   { KILLER: "킬러(KILLER)" },
+  { PARADIN: "파라딘(PARADIN)" },
+  { TORNADO: "토나도(TORNADO)" },
+  { REFLEX: "리플렉스(REFLEX)" },
+  { ARMY: "아미(ARMY)" },
+  { EAGLE: "이글(EAGLE)" },
+  { ARGUMENT: "아구먼트(ARGUMENT)" },
+  { "EURYBIA SPIN": "유르비아 스핀(EURYBIA SPIN)" },
+  { "MAGIC X": "매직 X(MAGIC X)" },
+  { TOURMENT: "투어먼트(TOURMENT)" },
+  { "ROAD DEFENDER": "로드 디펜더(ROAD DEFENDER)" },
   { KEVIN: "케빈(KEVIN)" },
   {
     파로사: "파로사(PAROSSA)",
@@ -787,6 +827,15 @@ const brandRules = [
     kingdom: "킹덤(KINGDOM)",
     왕국: "킹덤(KINGDOM)",
   },
+  {
+    "휴대용 낚시 바늘 연마기 포켓 텔레스코픽":
+      "킹덤 휴대용 낚시 바늘 연마기 포켓 텔레스코픽",
+  },
+  {
+    "접이식 휴대용 어망, 잡힌 물고기를 보관할 수 있는 킹덤 플로팅 피쉬 바스켓":
+      "킹덤 접이식 휴대용 어망, 잡힌 물고기를 보관할 수 있는 킹덤 플로팅 피쉬 바스켓",
+  },
+
   //  ---------------------------------------- 롤피쉬  -----------------------------
   {
     롤피쉬: "롤피쉬(ROLLFISH)",
