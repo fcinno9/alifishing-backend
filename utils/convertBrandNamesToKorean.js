@@ -899,6 +899,7 @@ const brandRules = [
 
   {
     쯔리노야: "쯔리노야(TSURINOYA)",
+    쓰리노야: "쯔리노야(TSURINOYA)",
     TSURINOYA: "쯔리노야(TSURINOYA)",
   },
   {
@@ -1066,20 +1067,19 @@ export function convertBrandNamesToKorean(title) {
         .map(escapeRegExp)
         .join("|");
 
+      const letter = String.raw`[a-zA-Z\p{Script=Hangul}]`;
+
       const pattern = new RegExp(
         [
-          // 이미 완성된 표기
-          escapeRegExp(replacement),
-
-          // 영문(한글), 한글(영문) 형태
-          `(?:${aliasPattern})\\s*\\(\\s*(?:${aliasPattern})\\s*\\)`,
-
-          // 개별 검색어
-          escapeRegExp(keyword),
-        ]
-          .map((part) => `(?<![a-zA-Z])(?:${part})(?![a-zA-Z])`)
-          .join("|"),
-        "i",
+          `(?<!${letter})`,
+          `(?:${[
+            escapeRegExp(replacement),
+            `(?:${aliasPattern})\\s*\\(\\s*(?:${aliasPattern})\\s*\\)`,
+            escapeRegExp(keyword),
+          ].join("|")})`,
+          `(?!${letter})`,
+        ].join(""),
+        "iu",
       );
 
       if (!pattern.test(title)) continue;
