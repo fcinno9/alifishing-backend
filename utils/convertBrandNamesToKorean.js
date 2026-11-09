@@ -135,6 +135,7 @@ const brandRules = [
     퓨어러뉴: "퓨어루어(PURELURE)",
     PURELURE: "퓨어루어(PURELURE)",
   },
+  { ZANA: "자나(ZANA)" },
 
   {
     "NEW TORRENT": "뉴 토렌트(NEW TORRENT)",
@@ -187,7 +188,7 @@ const brandRules = [
     Amaro: "아마로(Amaro)",
   },
   {
-    "퓨어루어 SPURS 프로 라이트 게임 낚싯대 1.86, 2.15m":
+    "SPURS 프로 라이트 게임 낚싯대 1.86, 2.15m":
       "퓨어루어 SPURS 프로 라이트 게임 낚싯대 1.86, 2.15m",
   },
   {
@@ -207,6 +208,10 @@ const brandRules = [
   {
     "고 탄소 Egi 막대 오징어 루어로드":
       "테키움(techium) 고 탄소 Egi 막대 오징어 루어로드",
+  },
+  {
+    "고 탄소 에기 막대 오징어 루어로드":
+      "테키움(techium) 고 탄소 에기 막대 오징어 루어로드",
   },
   {
     "1.5m 갑오징어 낚싯대 웹풋": "퓨리오(PURIO) 1.5m 갑오징어 낚싯대 웹풋",
@@ -610,7 +615,7 @@ const brandRules = [
   // ---------------------------------------- 지온 -----------------------------
 
   { 지온: "지온(ZION)", ZION: "지온(ZION)" },
-  { 카나: "카나(ZANA)", ZANA: "카나(ZANA)" },
+  { KANA: "카나(KANA)" },
   { 가렌: "가렌(GAREN)", GAREN: "가렌(GAREN)" },
   { 벨리아: "벨리아(BELIA)", BELIA: "벨리아(BELIA)" },
 
@@ -621,6 +626,7 @@ const brandRules = [
     "아부 가르시아": "아부가르시아(Abu Garcia)",
     AbuGarcia: "아부가르시아(Abu Garcia)",
     "Abu Garcia": "아부가르시아(Abu Garcia)",
+    "Abu 가르시아": "아부가르시아(Abu Garcia)",
   },
 
   //  ---------------------------------------- 마사카 -----------------------------
