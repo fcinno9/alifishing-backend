@@ -12,6 +12,16 @@ const brandRules = [
     타시기: "타시기(TASHIGI)",
   },
   {
+    SHARKRY: "샤크리(SHARKRY)",
+  },
+  {
+    REMUS: "레무스(REMUS)",
+  },
+  {
+    IKAHAZE: "이카하제(IKAHAZE)",
+    이카하제: "이카하제(IKAHAZE)",
+  },
+  {
     "ZORO YANUS": "조로 야누스(ZORO YANUS)",
     "조로 야누스": "조로 야누스(ZORO YANUS)",
   },
@@ -148,6 +158,7 @@ const brandRules = [
   },
   {
     트라이포드: "트라이포드(Tripod)",
+    트라이폴드: "트라이포드(Tripod)",
     Tripod: "트라이포드(Tripod)",
   },
   {
@@ -161,6 +172,10 @@ const brandRules = [
   {
     시베드: "시베드(seabed)",
     seabed: "시베드(seabed)",
+  },
+  {
+    루비나: "루비나(LUBINA)",
+    LUBINA: "루비나(LUBINA)",
   },
   {
     "FUJI Tenya": "스파다(SPADA) FUJI TENYA",
@@ -618,6 +633,11 @@ const brandRules = [
   { KANA: "카나(KANA)" },
   { 가렌: "가렌(GAREN)", GAREN: "가렌(GAREN)" },
   { 벨리아: "벨리아(BELIA)", BELIA: "벨리아(BELIA)" },
+  // ---------------------------------------- 핸딩 -----------------------------
+
+  { 핸딩: "핸딩(HANDING)", HANDING: "핸딩(HANDING)" },
+  { "MAGIC L ": "매직 L(MAGIC L)" },
+  { "Elite ": "엘리트(Elite)" },
 
   // ---------------------------------------- 지온 -----------------------------
 
@@ -653,6 +673,7 @@ const brandRules = [
   //  ---------------------------------------- 킹덤 -----------------------------
 
   { 킹덤: "킹덤(KINGDOM)", KINGDOM: "킹덤(KINGDOM)" },
+  { ACAPELLA: "아카펠라(ACAPELLA)", 아카펠라: "아카펠라(ACAPELLA)" },
 
   //  ---------------------------------------- 요즈리  -----------------------------
 
